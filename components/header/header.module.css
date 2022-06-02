@@ -1,0 +1,158 @@
+@value headerWhite from '../../styles/common/colors.css';
+@value headerBlack from '../../styles/common/colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Sans+KR:wght@500&family=Nunito:ital@1&display=swap');
+
+.header {
+    width: 100%;
+    padding: 2em;
+    color: headerWhite;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.change_header {
+    width: 100%;
+    padding: 2em;
+    transition: background-color 1s;
+    background-color: headerWhite;
+    color: headerBlack;
+    display: flex;
+    justify-content: center;
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.container {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.container h1 {
+    font: bold 27px/1 "Noto Sans KR";
+    cursor: pointer;
+}
+
+.header .container h1 {
+    color: headerWhite;
+}
+
+.change_header .container h1 {
+    color: headerBlack;
+}
+
+.container ul {
+    display: flex;
+    color: headerWhite;
+}
+
+.container ul li {
+    margin: 0px 24px;
+}
+
+.header .container ul li {
+    color: headerWhite;
+    font: 18px/1 "Noto Sans KR";
+}
+
+.change_header .container ul li {
+    color: headerBlack;
+    font: 18px/1 "Noto Sans KR";
+}
+
+.header .btnMenu {
+    font-size: 24px;
+    color: headerWhite;
+    display: none;
+    cursor: pointer;
+}
+
+.change_header .btnMenu {
+    font-size: 24px;
+    color: headerBlack;
+    display: none;
+    cursor: pointer;
+}
+
+/* mobile phone*/
+@media screen and (max-width: 1023px) {
+    .container ul {
+        display: none;
+    }
+
+    /* .container .btnMenu {
+        display: none;
+    } */
+    .change_header .container .btnMenu {
+        display: block;
+
+    }
+
+    .header .container .icon {
+        color: headerWhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .change_header .container .icon {
+        color: headerBlack;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .header {
+        width: 100%;
+        padding: 1em;
+        color: headerWhite;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    .change_header {
+        width: 100%;
+        padding: 1em;
+        transition: background-color 1s;
+        background-color: headerWhite;
+        color: headerBlack;
+        display: flex;
+        justify-content: center;
+
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    .container {
+        width: 83vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+
+    }
+
+    .container h1 {
+        font: bold 23px/1 "Noto Sans KR";
+        cursor: pointer;
+    }
+}
