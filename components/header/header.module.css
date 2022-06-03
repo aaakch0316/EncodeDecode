@@ -4,8 +4,9 @@
 
 .header {
     width: 100%;
-    padding: 2em;
-    color: headerWhite;
+    padding: 0em;
+    height: 7vh;
+    background-color: rgb(66, 66, 66);
     display: flex;
     justify-content: center;
     position: fixed;
@@ -16,7 +17,8 @@
 
 .change_header {
     width: 100%;
-    padding: 2em;
+    height: 7vh;
+    padding: 0em;
     transition: background-color 1s;
     background-color: headerWhite;
     color: headerBlack;
@@ -36,6 +38,7 @@
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+    /* height: 100px; */
 
 }
 
@@ -87,6 +90,7 @@
 
 /* mobile phone*/
 @media screen and (max-width: 1023px) {
+    
     .container ul {
         display: none;
     }
@@ -116,7 +120,7 @@
 
     .header {
         width: 100%;
-        padding: 1em;
+        /* padding: 1em; */
         color: headerWhite;
         display: flex;
         justify-content: center;
@@ -128,7 +132,7 @@
 
     .change_header {
         width: 100%;
-        padding: 1em;
+        /* padding: 1em; */
         transition: background-color 1s;
         background-color: headerWhite;
         color: headerBlack;

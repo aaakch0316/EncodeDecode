@@ -21,9 +21,9 @@ const Header = (props) => {
         props.onLogoClick()
     }
 
-    const openRecruitPage = () => {
-        window.open("http://jsoftware.co.kr/jrecruit/index.php", "_blank")
-    }
+    // const openRecruitPage = () => {
+    //     window.open("http://jsoftware.co.kr/jrecruit/index.php", "_blank")
+    // }
 
     let headerStyle = scrollPosition < 10 && !props.linkFlag ? styles.header : styles.change_header
 
@@ -33,9 +33,9 @@ const Header = (props) => {
                 <Link href="/"><h1 onClick={onLogoClick}>Encoder Decoder</h1></Link>
                 <ul id="gnb">
                     {/* <Link to="/"><li onClick={onHomeClick}>회사소개</li></Link> */}
-                    <Link href="/company"><li>회사소개</li></Link>
-                    <Link href="/portfolio"><li>사업영역</li></Link>
-                    <li onClick={openRecruitPage} style={{cursor: "pointer"}}>인재채용</li>
+                    <Link href="/encoder"><li>Encoder</li></Link>
+                    <Link href="/decoder"><li>Decoder</li></Link>
+                    {/* <li onClick={openRecruitPage} style={{cursor: "pointer"}}>인재채용</li> */}
                 </ul>
 
                 <div className={styles.btnMenu}>
