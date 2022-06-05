@@ -6,7 +6,7 @@ import styles from './header.module.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 
-const Header = (props) => {
+const Navbar = (props) => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const updateScroll = () => {
         setScrollPosition(window.scrollY || document.documentElement.scrollTop);
@@ -53,4 +53,4 @@ const Header = (props) => {
 }
 
 // export default React.memo(Header);
-export default Header;
+export default Navbar;
