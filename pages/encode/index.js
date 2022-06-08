@@ -1,12 +1,9 @@
-import styles from '../../styles/encode/encode.module.css'
+import EncodePage from '../../container/encode'
 
 const Encode = () => {
     return (
-    <div className={styles.container}>
-        <main className={styles.main}>
-            welcome to Encoder
-        </main>
-    </div>)
+        <EncodePage />
+    )
 }
 
 export default Encode;

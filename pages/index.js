@@ -7,7 +7,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="#">Hanpy</a>
+          Welcome to <a href="/">Hanpy</a>
         </h1>
 
         <p className={styles.description}>
@@ -17,13 +17,13 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="/encode" className={styles.card}>
-            <h2>Encoder &rarr;</h2>
-            <p>Use the online tool to encode a string fo text.</p>
+            <h2>URL Encoder &rarr;</h2>
+            <p>Use the online tool to encode a URL string of text.</p>
           </a>
 
           <a href="/decode" className={styles.card}>
-            <h2>Decoder &rarr;</h2>
-            <p>Use the online tool to decoder a string fo text.</p>
+            <h2>URL Decoder &rarr;</h2>
+            <p>Use the online tool to decoder a URL string of text.</p>
           </a>
 
           {/* <a

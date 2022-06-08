@@ -17,9 +17,9 @@ const Navbar = (props) => {
             window.addEventListener('scroll', updateScroll);
         }
     });
-    const onLogoClick = () => {
-        props.onLogoClick()
-    }
+    // const onLogoClick = () => {
+    //     props.onLogoClick()
+    // }
 
     // const openRecruitPage = () => {
     //     window.open("http://jsoftware.co.kr/jrecruit/index.php", "_blank")
@@ -30,11 +30,13 @@ const Navbar = (props) => {
     return (
         <header className={headerStyle}>
             <div className={styles.container}>
-                <Link href="/"><h1 onClick={onLogoClick}>Encoder Decoder</h1></Link>
+                <Link href="/"><h1
+                //  onClick={onLogoClick}
+                 >Encoder Decoder</h1></Link>
                 <ul id="gnb">
                     {/* <Link to="/"><li onClick={onHomeClick}>회사소개</li></Link> */}
-                    <Link href="/encoder"><li>Encoder</li></Link>
-                    <Link href="/decoder"><li>Decoder</li></Link>
+                    <Link href="/encode"><li>Encoder</li></Link>
+                    <Link href="/decode"><li>Decoder</li></Link>
                     {/* <li onClick={openRecruitPage} style={{cursor: "pointer"}}>인재채용</li> */}
                 </ul>
 
