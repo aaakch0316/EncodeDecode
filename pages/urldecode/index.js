@@ -1,4 +1,4 @@
-import DecodePage from '../../container/decode'
+import DecodePage from '../../container/urldecode'
 
 const Encode = () => {
     return (
