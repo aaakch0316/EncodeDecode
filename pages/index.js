@@ -16,12 +16,12 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="/encode" className={styles.card}>
+          <a href="/urlencode" className={styles.card}>
             <h2>URL Encoder &rarr;</h2>
             <p>Use the online tool to encode a URL string of text.</p>
           </a>
 
-          <a href="/decode" className={styles.card}>
+          <a href="/urldecode" className={styles.card}>
             <h2>URL Decoder &rarr;</h2>
             <p>Use the online tool to decoder a URL string of text.</p>
           </a>

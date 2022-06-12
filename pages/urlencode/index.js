@@ -1,4 +1,4 @@
-import EncodePage from '../../container/encode'
+import EncodePage from '../../container/urlencode'
 
 const Encode = () => {
     return (
