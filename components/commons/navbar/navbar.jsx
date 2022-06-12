@@ -27,6 +27,12 @@ const Navbar = (props) => {
 
     let headerStyle = scrollPosition < 10 && !props.linkFlag ? styles.header : styles.change_header
 
+    const [encodeRouter, setEncodeRouter] = useState(false)
+
+    const handleEncodeRouter = () => {
+        setEncodeRouter((pre)=> !pre)
+    }
+
     return (
         <header className={headerStyle}>
             <div className={styles.container}>
@@ -35,8 +41,9 @@ const Navbar = (props) => {
                  >Encoder Decoder</h1></Link>
                 <ul id="gnb">
                     {/* <Link to="/"><li onClick={onHomeClick}>회사소개</li></Link> */}
-                    <Link href="/encode"><li>Encoder</li></Link>
-                    <Link href="/decode"><li>Decoder</li></Link>
+                    {/* <Link href="/urlencode"><li>Encoder/Decoder</li></Link> */}
+                    <li onClick={handleEncodeRouter}>Encoder/Decoder</li>
+                    {/* <Link href="/decode"><li>Decoder</li></Link> */}
                     {/* <li onClick={openRecruitPage} style={{cursor: "pointer"}}>인재채용</li> */}
                 </ul>
 
@@ -50,6 +57,31 @@ const Navbar = (props) => {
                 </div>
             </div>
             {/* <Outlet /> */}
+            {/* asdf */}
+            {encodeRouter ? null : 
+                <div onClick={handleEncodeRouter}>
+                    <ul>
+                        <Link href="/urlencode">
+                            <li>URL encode</li>
+                        </Link>
+                        <Link href="/urlencode">
+                            <li>URL decode</li>
+                        </Link>
+                        <Link href="/urlencode">
+                            <li>Base64 encode</li>
+                        </Link>
+                        <Link href="/urlencode">
+                            <li>Base64 decode</li>
+                        </Link>
+                        <Link href="/urlencode">
+                            <li>HTML encode</li>
+                        </Link>
+                        <Link href="/urlencode">
+                            <li>HTML decode</li>
+                        </Link>
+                    </ul>
+                </div>
+            }
         </header>
     )
 }
