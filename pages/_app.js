@@ -21,6 +21,10 @@ function MyApp({ Component, pageProps }) {
         /> */}
 
         <link rel="icon" href="/favicon.ico" />
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6098361082126605"
+     crossorigin="anonymous"></script>
+
       </Head>
       <Layout>
         <Component {...pageProps} />
