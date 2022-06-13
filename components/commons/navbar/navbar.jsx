@@ -58,7 +58,7 @@ const Navbar = (props) => {
             </div>
             {/* <Outlet /> */}
             {/* asdf */}
-            {encodeRouter ? null : 
+            {encodeRouter ? 
                 <div onClick={handleEncodeRouter}>
                     <ul>
                         <Link href="/urlencode">
@@ -80,7 +80,7 @@ const Navbar = (props) => {
                             <li>HTML decode</li>
                         </Link>
                     </ul>
-                </div>
+                </div> : null
             }
         </header>
     )
