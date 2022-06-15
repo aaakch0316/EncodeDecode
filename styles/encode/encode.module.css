@@ -37,3 +37,12 @@
     width: 600px;
     margin: 30px 0;
 }
+
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+  }
+  .explanation {
+      width: 100%
+  }
+}
