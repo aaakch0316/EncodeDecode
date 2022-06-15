@@ -6,6 +6,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6098361082126605" crossOrigin="anonymous"></script>
+        
         <title>Encoding/Decoding</title>
         <meta name="description" content="인코딩(encoding)과 디코딩(decoding) 개념을 이해하고 사용할 수 있습니다." />
         <meta name="keywords" content="encode decode 인코딩 디코딩 urlencoding" />
@@ -21,8 +23,6 @@ function MyApp({ Component, pageProps }) {
         /> */}
 
         <link rel="icon" href="/favicon.ico" />
-
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6098361082126605" crossOrigin="anonymous"></script>
 
       </Head>
       <Layout>
