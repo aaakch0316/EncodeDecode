@@ -11,8 +11,8 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Get started by click{' '}
+          <code className={styles.code}>encode/decode</code>
         </p>
 
         <div className={styles.grid}>
@@ -24,6 +24,16 @@ export default function Home() {
           <a href="/urldecode" className={styles.card}>
             <h2>URL Decoder &rarr;</h2>
             <p>Use the online tool to decoder a URL string of text.</p>
+          </a>
+
+          <a href="/base64encode" className={styles.card}>
+            <h2>BASE64 Encoder &rarr;</h2>
+            <p>Use the online tool to encode a string of text.</p>
+          </a>
+
+          <a href="/base64decode" className={styles.card}>
+            <h2>BASE64 Decoder &rarr;</h2>
+            <p>Use the online tool to decoder a string of text.</p>
           </a>
 
           {/* <a

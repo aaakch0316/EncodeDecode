@@ -6,7 +6,7 @@
     width: 100%;
     padding: 1em;
     /* height: 7vh; */
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(94, 102, 95);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,12 +19,14 @@
 
 .change_header {
     width: 100%;
-    height: 7vh;
-    padding: 0em;
+    /* height: 7vh; */
+    padding: 1em;
     transition: background-color 1s;
     background-color: headerWhite;
     color: headerBlack;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 
 
@@ -90,16 +92,32 @@
     cursor: pointer;
 }
 
+.header .subMenu {
+    color: azure;
+    width: 70%;
+    margin-top: 30px;
+    /* letter-spacing: 1px; */
+    /* word-spacing: 1px; */
+    line-height: 25px;
+    
+}
+.change_header .subMenu {
+    color: rgb(43, 43, 43);
+    width: 70%;
+    margin-top: 30px;
+    /* letter-spacing: 1px; */
+    /* word-spacing: 1px; */
+    line-height: 25px;
+    
+}
+
 /* mobile phone*/
-@media screen and (max-width: 1023px) {
+/* @media screen and (max-width: 1023px) {
     
     .container ul {
         display: none;
     }
 
-    /* .container .btnMenu {
-        display: none;
-    } */
     .change_header .container .btnMenu {
         display: block;
 
@@ -122,7 +140,6 @@
 
     .header {
         width: 100%;
-        /* padding: 1em; */
         color: headerWhite;
         display: flex;
         justify-content: center;
@@ -134,7 +151,6 @@
 
     .change_header {
         width: 100%;
-        /* padding: 1em; */
         transition: background-color 1s;
         background-color: headerWhite;
         color: headerBlack;
@@ -161,4 +177,4 @@
         font: bold 23px/1 "Noto Sans KR";
         cursor: pointer;
     }
-}
+} */

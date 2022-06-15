@@ -59,24 +59,24 @@ const Navbar = (props) => {
             {/* <Outlet /> */}
             {/* asdf */}
             {encodeRouter ? 
-                <div onClick={handleEncodeRouter}>
+                <div onClick={handleEncodeRouter}className={styles.subMenu}>
                     <ul>
                         <Link href="/urlencode">
                             <li>URL encode</li>
                         </Link>
-                        <Link href="/urlencode">
+                        <Link href="/urldecode">
                             <li>URL decode</li>
                         </Link>
-                        <Link href="/urlencode">
+                        <Link href="/base64encode">
                             <li>Base64 encode</li>
                         </Link>
-                        <Link href="/urlencode">
+                        <Link href="/base64decode">
                             <li>Base64 decode</li>
                         </Link>
-                        <Link href="/urlencode">
+                        <Link href="/htmlencode">
                             <li>HTML encode</li>
                         </Link>
-                        <Link href="/urlencode">
+                        <Link href="/htmldecode">
                             <li>HTML decode</li>
                         </Link>
                     </ul>
