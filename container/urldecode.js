@@ -2,18 +2,41 @@ import styles from '../styles/encode/encode.module.css'
 import { useState } from 'react'
 import Button from '../components/button/button'
 
-const DecodePage = () => {
+const DecodePage = ({ decodeService }) => {
     const [inputValue, setInputValue] = useState('')
+    const [inputEncodeValue, setInputEncodeValue] = useState('')
     const handleChange = (e) => {
         setInputValue(e.target.value)
+    }
+    const [urlEncode, setUrlEncode] = useState(false)
+    const onHandleAreatext = () => {
+        if (inputValue.length == 0){
+            alert('please input text!')
+            return
+        }
+        // setInputEncodeValue(encodeURI(inputValue))
+        setInputEncodeValue(decodeService.urldecode(inputValue))
+        setUrlEncode(true)
+    }
+    const backHandleAreatext = () => {
+        setUrlEncode(false)
     }
     return (
         <div className={styles.container}>
             <p>url 디코딩 하는 방법을 알아보자.</p>
             <main className={styles.main}>
                 <h2>url Decode</h2>
-                <textarea className={styles.textarea} value={inputValue} onChange={handleChange} />
-                <Button name="Decode" />
+                {urlEncode? 
+                <>
+                    <textarea className={styles.textarea} value={inputEncodeValue} onChange={handleChange} />
+                    <Button onClick={backHandleAreatext} name="Back" />
+                </>
+                : 
+                <>
+                    <textarea className={styles.textarea} value={inputValue} onChange={handleChange} />
+                    <Button onClick={onHandleAreatext} name="Decode" />
+                </>
+                }
             </main>
             <div className={styles.hr}>
                 <hr />

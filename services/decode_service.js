@@ -1,4 +1,4 @@
-class Decode {
+class DecodeService {
     urldecode(context) {
         return decodeURI(context)
     }
@@ -10,4 +10,4 @@ class Decode {
     }
 }
 
-export default Decode
+export default DecodeService

@@ -1,6 +1,6 @@
 import Encode from "../components/encode/encode";
 
-const EncodePage = () => {
+const EncodePage = ({ encodeService }) => {
     const data = {
         text : {
             descript : "base64 인코딩 하는 방법을 알아보자",
@@ -10,7 +10,7 @@ const EncodePage = () => {
     }
     return(
     <>
-        <Encode data={data} />
+        <Encode data={data} encodeService={encodeService} />
     </>
     )
 }

@@ -1,4 +1,4 @@
-class Encode {
+class EncodeService {
     urlencode(context) {
         return encodeURI(context)
     }
@@ -15,4 +15,4 @@ class Encode {
     }
 }
 
-export default Encode
+export default EncodeService

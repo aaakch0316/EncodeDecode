@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Button from '../components/button/button'
 
 
-const EncodePage = () => {
+const EncodePage = ({encodeService}) => {
     const [inputValue, setInputValue] = useState('')
     const [inputEncodeValue, setInputEncodeValue] = useState('')
     const handleChange = (e) => {
@@ -15,7 +15,8 @@ const EncodePage = () => {
             alert('please input text!')
             return
         }
-        setInputEncodeValue(encodeURI(inputValue))
+        // setInputEncodeValue(encodeURI(inputValue))
+        setInputEncodeValue(encodeService.urlencode(inputValue))
         setUrlEncode(true)
     }
     const backHandleAreatext = () => {
